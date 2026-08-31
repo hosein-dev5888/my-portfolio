@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducing My Self</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/logo.png">
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav class="section-nav">
+      <div class="logo-section-nav">
+        <img src="images/logo.png" alt="logo" class="nav-logo-img">
+        <span>MyPortfolio</span>
+      </div>
+      <ul>
+        <li class="section-li">
+          <a class="section-li-link" href="#about">About</a>
+        </li>
+        <li class="section-li">
+          <a class="section-li-link" href="#skills">Skills</a>
+        </li>
+        <li class="section-li">
+          <a class="section-li-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Hero Section(The main interoduction)-->
+    <header id="hero" class="container-header">
+      <!--Photo-container-->
+      <div class="img-me">
+        <img src="images/me.png" alt="Hosein - web Developer" class="profile-img"/>
+      </div>
+      <h1 class="title-header">Hi, I'm Hosein</h1>
+      <p class="text-header">Web Developer & Tech Enthusiast</p>
+      <p class="text-header">
+        I'm a frontend developer currently learning HTML,CSS,JavaScript and
+        <br />
+        responsive web design. I love building clean, simple website and I'm
+        <br />
+        always excited to learn something new.
+      </p>
+    </header>
+
+    <!--About Me Section-->
+    <section id="about" class="about-section">
+      <h2 class="title-about">About Me</h2>
+      <p class="text-about">A quick look at who I am</p>
+      <p class="text-about">
+        Hello! My name is Hosein and I started my web development journey with
+        HTML <br />
+        CSS,JavaScript and responsive design.Right now I,m a beginner ,but I
+        practice every <br />
+        day and I,m adding new skills to my toolbox.
+      </p>
+      <p class="text-about">
+        My goal is to become a professional frontend developer and build
+        websites that are <br />
+        fast,accessible and enjoyable to use.
+      </p>
+    </section>
+    <!--Skills Section (Skill Bars)-->
+    <section id="skills" class="skills-section">
+      <h2 class="title-skils">My skills</h2>
+      <p class="subtitle-skills">What I'm learning</p>
+      <button class="show-skills-btn" id="Btn-Skills">Show My Skills</button>
+      <div class="skills-wrapper">
+        <!--skill 1: HTML -->
+        <div class="skill-item">
+          <div class="skill-info">
+            <span class="skill-name">HTML</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill html-fill"></div>
+          </div>
+        </div>
+        <!--skill 2: CSS -->
+        <div class="skill-item">
+          <div class="skill-info">
+            <span class="skill-name">CSS</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill css-fill"></div>
+          </div>
+        </div>
+        <!--skill 3: Java Script -->
+        <div class="skill-item">
+          <div class="skill-info">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-percent">60%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill js-fill"></div>
+          </div>
+        </div>
+        <!--skill 4: Responsive Desing -->
+        <div class="skill-item">
+          <div class="skill-info">
+            <span class="skill-name">Responsive Design</span>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill responsive-fill"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!--contact section-->
+     <section id="contact" class="contact-section">
+<h2 class="title-contact">Contact Me</h2>
+<p class="text-contact">Feel free to reach out for collaborations or questions!</p>
+ <div class="contact-links">
+      
+        <a href="mailto:hoein5888@gmail.com" class="contact-btn">Email Me</a>
+        
+       
+        <a href="https://github.com/hosein-dev5888" target="_blank" rel="noopener noreferrer" class="contact-btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/ho3ein-dev" target="_blank" rel="noopener noreferrer" class="contact-btn">LinkedIn</a>
+    </div>     
+</section>
+     <footer class="footer">
+        <p class="text-footer">&copy;2026 Hosein.Built with passion & clean code.</p>
+     </footer>
+     <script src="start.js"></script>
+  </body>
+</html>

@@ -1,0 +1,306 @@
+/* ========================
+   Custom Offline Fonts
+======================== */
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-VariableFont_opsz,wght.ttf");
+}
+/* ========================
+   Global & Reset Styles
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter";
+  background-color: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+/* ========================
+   Navigation Bar
+======================== */
+.section-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 10%;
+  background-color: #1e293b;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo-section-nav {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+.nav-logo-img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  border:2px solid #00b0ff;
+  box-shadow: 0 0 10px rgba(0 , 176 , 255 ,0.35);
+  vertical-align: middle;
+}
+.section-li {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+.section-li-link {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.section-li-link:hover {
+  color: #38bdf8;
+}
+/* ========================
+   Hero Section
+======================== */
+.container-header {
+  text-align: center;
+  padding: 5rem 1rem 3rem;
+}
+.img-me {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.title-header {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  background: linear-gradient(
+    45deg,
+    #ff007f,
+    #ff7700,
+    #ffeb3b,
+    #00e676,
+    #00b0ff,
+    #7c4dff,
+    #ff007f
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: rainbow-flow 4s linear infinite;
+  display: inline-block;
+}
+
+
+@keyframes rainbow-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.text-header {
+  color: #94a3b8;
+  margin-bottom: 0.8rem;
+}
+/* ========================
+   About Section
+======================== */
+.about-section {
+  padding: 3rem 10%;
+  text-align: center;
+  background-color: #1e293b;
+}
+.title-about {
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+.text-about {
+  color: #cbd5e1;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+}
+/* ========================
+   Skills Section
+======================== */
+.skills-section {
+  padding: 4rem 10%;
+  text-align: center;
+}
+.title-skils {
+  font-size: 2rem;
+  color: #38bdf8;
+}
+.subtitle-skills {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+.show-skills-btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+  margin-bottom: 2.5rem;
+}
+.show-skills-btn:hover {
+  background-color: #0284c7;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+.skills-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+.skill-item {
+  margin-bottom: 1.5rem;
+}
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #334155;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/*For JS*/
+.progress-fill {
+    height: 100%;
+    width:0%;
+ background: linear-gradient(90deg, #10b981, #00ff88);
+ box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+ transition:width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.html-fill.active {
+  width: 85%;
+}
+.css-fill.active {
+  width: 75%;
+}
+.js-fill.active {
+  width: 60%;
+}
+.responsive-fill.active {
+  width: 70%;
+}
+/* ===================
+   Contact Section
+======================*/
+.contact-section {
+  padding: 4rem 10%;
+  text-align: center;
+  background-color: #1e293b;
+}
+.title-contact {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+.text-contact {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.contact-btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  background-color: transparent;
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.contact-btn:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+/*footer*/
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #0f172a;
+  border-top: 1px solid #334155;
+}
+.text-footer {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+/* ========================
+   Responsive Media Queries
+======================== */
+
+@media (max-width: 768px) {
+  .section-nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 5%;
+  }
+
+  .section-li {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+  .about-section,
+  .skills-section,
+  .contact-section {
+    padding: 3rem 5%;
+  }
+  .title-header {
+    font-size: 1.8rem;
+  }
+  .title-about,
+  .title-skils,
+  .title-contact {
+    font-size: 1.5rem;
+  }
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
