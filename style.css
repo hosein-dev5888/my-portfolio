@@ -215,6 +215,9 @@ body {
 .js-fill.active {
   width: 60%;
 }
+.React-fill.active {
+  width: 58%;
+}
 .responsive-fill.active {
   width: 70%;
 }
